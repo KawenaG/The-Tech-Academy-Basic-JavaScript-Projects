@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+
+<div class="frame1">
+    <h1 id="total">0.00</h1>
+    <br>
+Number 1: <input type="text" id="txt1" size="4">
+<br><br>
+Number 2: <input type="text" id="txt2" size="4">
+<br><br><br>
+<input type="radio" name="calc" value="*" checked> *</input>
+<input type="radio" name="calc" value="/"> /</input>
+<input type="radio" name="calc" value="+"> +</input>
+<input type="radio" name="calc" value="-"> -</input>
+<br><br>
+<button type="button" onclick="Calc();">Calculate</button>
+<button type="button" onclick="Clear();">Clear</button>
+</div>
+
+<script>
+//-------------------------------------------------------------------------------------------JS
+var txt1= document.getElementById("txt1");
+var txt2= document.getElementById("txt2");
+var total= document.getElementById("total");
+
+function Calc() {
+    var result = document.querySelector('input[name="calc"]:checked').value; // checked?
+    var num1 = parseInt(txt1.value); console.log(typeof num1); console.log(isNaN(num1));
+    var num2 = parseInt(txt1.value); console.log(typeof num2); console.log(isNaN(num2));
+    if(result == "*") {
+        total.innerHTML = (num1 * num2) .toFixed(2);
+    } else if(result == "/") {
+        total.innerHTML = (num1 / num2) .tofixed(2); //precise to the tenths place
+    } else if(result == "+") {
+        total.innerHTML = (num1 + num2) .tofixed(2);
+    } else if(result == "-") {
+        total.innerHTML = (num1 - num2) .tofixed(2);
+    };
+};
+
+function Clear() {
+    txt1.value=""; txt2.value=""; total.innerHTML="0.00"; //reset fields
+};
+
+//JS----------------------------------------------------------------------------------------
+</script>
+
+</body>
+</html>
