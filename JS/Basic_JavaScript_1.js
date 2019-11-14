@@ -1,3 +1,5 @@
-var colors = "colored text here";
-var colors = colors.fontcolor("blue");
-document.write(colors);
+function myFirstFunction() {
+    var str = "This text is blue!";
+    var result = str.fontcolor("blue");
+    document.getElementById("Blue_Text").innerHTML = result;
+}
