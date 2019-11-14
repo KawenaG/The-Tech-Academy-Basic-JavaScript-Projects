@@ -1,3 +1,3 @@
-document.write("Here is a quote,"
-+ " It goes like this: \"quote quote quote quote.\""
-+ "The End.");
+var colors = "colored text here";
+var colors = colors.fontcolor("blue");
+document.write(colors);
