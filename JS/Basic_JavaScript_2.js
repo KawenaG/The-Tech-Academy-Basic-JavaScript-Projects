@@ -1,3 +1,6 @@
-<button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+function clic() {
+    var str = "$15.13";
+    var result = str.fontcolor("red");
+    document.getElementById("Red_Text").innerHTML = result;
+}
 
-<p id="demo"></p>
