@@ -1,5 +1,7 @@
-function myFunction() {
-    var sentence = "I am learning";
-    sentence += " a lot from this book!";
-    document.getElementById("concatenate").innerHTML = sentence;
+function testFunction() {
+    var x = 9;
+    var y = 5;
+    var equals= "9+5 = ";
+    total = x + y;
+    document.getElementById("add").innerHTML = total;
 }
