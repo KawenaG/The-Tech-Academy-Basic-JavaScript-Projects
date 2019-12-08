@@ -6,5 +6,6 @@ function dict() {
         Color: "Silver",
         Type: "SUV",
     };
-    document.getElementById("Dictionary").innerHTML = Cars.Type;
+    delete Cars.Type;
+    document.getElementById("Dictionary").innerHTML = Cars.Type
 }
