@@ -1,10 +1,14 @@
-function get_Age() {
-    Age = document.getElementById("Age").value;
-    if (Age >= 18) {
-        Vote = "You are old enough to vote!";
+function Time_function() {
+    var Time = new Date().getHours();
+    var Reply;
+    if (Time < 12 == Time > 0) {
+        Reply = "It is morning time!";
+    }
+    else if (Time > 12 == Time < 18) {
+        Reply = "It is the afternoon.";
     }
     else {
-        Vote ="You are not old enough to vote!";
+        Reply = "it is evening time.";
     }
-    document.getElementById("How_old_are_you?").innerHTML = Vote;
+    document.getElementById("Time_of_day").innerHTML = Reply;
 }
